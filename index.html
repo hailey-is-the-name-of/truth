@@ -239,7 +239,7 @@ body::after {
   </footer>
 
   <script>
-    Kakao.init('37ea916b7f1ab457b58119c60ec405a');
+    Kakao.init('37ea916b7f1ab457b58119c60ec4052a');
     const totalImages = 19;
     const imageOrder = Array.from({length: totalImages}, (_, i) => totalImages - i);
     let currentIndex = 0, currentVisible = 0;
@@ -269,12 +269,12 @@ body::after {
 
     function shareToKakao() {
       const num = imageOrder[currentIndex];
-      const shareUrl = `https://bluenew.life/share/${num}.html`;
-      const imageUrl = `https://bluenew.life/card/images/${num}.jpg`;
+      const shareUrl = `https://bluenew.life/truth/share/${num}.html`;
+      const imageUrl = `https://bluenew.life/truth/images/${num}.jpg`;
       Kakao.Link.sendDefault({
         objectType: 'feed',
         content: {
-          title: '대구시민이 꼭 알아야할 진실',
+          title: '대구시민들이 꼭 알아야할 진실',
           description: '더불어민주당 대구시당이 알려드립니다.',
           imageUrl,
           link: { mobileWebUrl: shareUrl, webUrl: shareUrl }
